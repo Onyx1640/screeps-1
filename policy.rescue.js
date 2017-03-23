@@ -10,7 +10,7 @@ var   raceWorker = require("race.worker");
 var   roleBase = require("role.base");
 var   stats = require("stats");
 var roomOwned = require("room.owned");
-var npcInvaderBattle = require("npc.invader.battle");
+//var npcInvaderBattle = require("npc.invader.battle");
 var gc = require("gc");
 
 /**
@@ -79,8 +79,8 @@ PolicyRescue.prototype.enactPolicy = function(currentPolicy) {
     var room = Game.rooms[currentPolicy.roomName];
     console.log("ENACT POLICY RESCUE",room);
     room.memory.policyId = currentPolicy.id;
-    console.log(room,"about to callnpcInvaderBattle.defendRoom in rescue");
-    npcInvaderBattle.defendRoom(room);
+    //console.log(room,"about to callnpcInvaderBattle.defendRoom in rescue");
+    //npcInvaderBattle.defendRoom(room);
     console.log(room,"AftercallnpcInvaderBattle.defendRoom in rescue")
     var creeps = _.filter(Game.creeps,
         function (creep) {return creep.memory.policyId == currentPolicy.id;});

@@ -7,7 +7,7 @@ var roomBase = require("room.base");
 var flagBase = require("flag.base");
 var gc = require("gc");
 var cpuUsage = require("cpu.usage");
-var recurringPolicies = require("recurring.policies");
+//var recurringPolicies = require("recurring.policies");
 var buildingBase = require("building.base");
 
 // Any modules that you use that modify the game's prototypes should be require'd

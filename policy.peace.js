@@ -14,7 +14,7 @@ var gc = require("gc");
 var tasks = require("tasks");
 
 var routeBase = require("route.base");
-var npcInvaderBattle = require("npc.invader.battle");
+//var npcInvaderBattle = require("npc.invader.battle");
 var economyRepair = require("economy.repair");
 //var economyDefence = require("economy.defence");
 
@@ -111,7 +111,7 @@ PolicyPeace.prototype.enactPolicy = function (currentPolicy) {
     economyLinkers.processBuildQueue(room);
 
     //if (gc.AI_CONSTRUCTION) this.newConstruction(room);
-    npcInvaderBattle.defendRoom(room);
+    //npcInvaderBattle.defendRoom(room);
 };
 
 PolicyPeace.prototype.newConstruction = function (room) {
